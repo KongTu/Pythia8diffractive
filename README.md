@@ -18,11 +18,13 @@ http://home.thep.lu.se/~torbjorn/pythia82html/Welcome.html.
 - For installation of Pythia 8 please see the general installation guide, http://home.thep.lu.se/Pythia/. The latest version is 8.3. 
 
 - After successful installation, check out this github under the main directory of pythia program, .../pythia83xx/, by
-git clone https://github.com/KongTu/Pythia8diffractive.git
+
+	git clone https://github.com/KongTu/Pythia8diffractive.git
 
 - go to Pythia8diffractive and do:
 
 	g++  -std=c++11 -m64 generatePPdiffractive.cpp -o generatePPdiffractive -I../include -O2  -pedantic -W -Wall -Wshadow -fPIC -L../lib -Wl,-rpath,../lib -lpythia8 -ldl `root-config --cflags --glibs`
 
 - to run it, 
+
 	./generatePPdiffractive
